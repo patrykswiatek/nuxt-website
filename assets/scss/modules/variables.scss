@@ -1,0 +1,35 @@
+// Color names generated with http://chir.ag/projects/name-that-color.
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+// Font
+$primaryFont: 'Open Sans';
+
+// Font weight
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+//Colors
+$alabaster: #fafafa;
+$alto: #cecece;
+$dusty-gray: #9a9a9a;
+$emperor: #515151;
+$havelock-blue: #4199dd;
+$hintOfRed: #fcfafa;
+$mercury: #e8e8e8;
+$salmon: #ff8573;
+$red: #ff0000;
+
+// Maps
+$breakpoints: (
+  'tablet': (
+    max-width: 880px
+  ),
+  'desktop': (
+    max-width: 1150px
+  ),
+  'largeDesktop': (
+    max-width: 1500px
+  )
+);
