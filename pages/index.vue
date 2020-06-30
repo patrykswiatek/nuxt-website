@@ -1,11 +1,17 @@
 <template>
   <div class="container">
-    <h1>Hello world</h1>
+    <h1>{{ loadedData.code }}</h1>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    loadedData() {
+      return this.$store.getters.loadedData
+    },
+  },
+}
 </script>
 
 <style lang="scss">

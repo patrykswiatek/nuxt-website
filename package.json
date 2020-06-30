@@ -12,8 +12,16 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "node-sass": "^4.14.1",
-    "nuxt": "^2.13.0"
+    "nodemailer": "^6.4.10",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "nuxt": "^2.13.0",
+    "validator": "^13.1.1",
+    "xss-filters": "^1.2.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",
@@ -27,6 +35,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^2.0.5",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-eslint-parser": "^7.1.0"
   }
 }
