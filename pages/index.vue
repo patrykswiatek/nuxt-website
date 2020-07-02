@@ -1,26 +1,34 @@
 <template>
   <div class="container">
-    <h1>{{ loadedData.code }}</h1>
+    {{ message }}
   </div>
 </template>
 
-<script>
-export default {
-  computed: {
-    loadedData() {
-      return this.$store.getters.loadedData
-    },
+<script lang="ts">
+import { defineComponent, ref } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    const message = ref('Yup')
+
+    return {
+      message,
+    }
   },
-}
+})
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
-  background-color: $havelock-blue;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.wrapper {
+  border: 1px solid yellow;
+  width: 400px;
+  height: 200px;
 }
 </style>
