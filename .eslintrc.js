@@ -18,5 +18,13 @@ module.exports = {
     'no-console': 'off',
     'vue/max-attributes-per-line': 'off',
     'prettier/prettier': ['error', { semi: false, singleQuote: true }],
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+        },
+      },
+    ],
   },
 }
